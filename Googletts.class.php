@@ -81,7 +81,7 @@ class Googletts implements \BMO
             }
             $res = googletts_save_recording($checksum,$lang,$name,$description);
             if ($res !== FALSE) {
-                header("Location: /freepbx/admin/config.php?display=recordings&action=edit&id=$res");
+                header("Location: /admin/config.php?display=recordings&action=edit&id=$res");
             }
             break;
         }
